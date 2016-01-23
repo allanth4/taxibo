@@ -394,10 +394,6 @@ class BookingController extends \UserFrosting\BaseController {
         $kmPrice = $pricings[$takstSymbol]['kmPrice'];
         $price = $hours * $hourPrice + $kms * $kmPrice;
 
-        //error_log("getPriceOnePeriod (".__LINE__.") " . " hours: $hours ($endHours - $startHours) * $hourPrice = " . ($hours * $hourPrice));
-        //error_log("getPriceOnePeriod (".__LINE__.") " . " kms: $kms * $kmPrice = " . ($kms * $kmPrice));
-        //error_log("getPriceOnePeriod (".__LINE__.") " . " price: $price");
-
         return $price;
     }
 

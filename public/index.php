@@ -498,9 +498,13 @@
      
     $app->get('/bookings/?', function () use ($app) {   
 
-        $period = isset($_GET['period']) && in_array($_GET['period'], ['week', 'month']) ? $_GET['period'] : 'day';
+        $period = isset($_GET['period']) && in_array($_GET['period'], ['day', 'week', 'month']) ? $_GET['period'] : 'plan';
         $startUts = $endUts = 0;
         switch ($period) {
+            case 'plan':
+                $startUts = strtotime('today');
+                $endUts = $startUts + 8640000;
+                break;
             case 'day':
                 $startUts = strtotime('today');
                 $endUts = strtotime('tomorrow');
@@ -524,11 +528,17 @@
                 break;
         }
 
-        $futureBookings = UF\Booking::QueryBuilder()->where('user_id', $app->user->id)
-        ->where('startUts', '>=', $startUts)
-        ->where('endUts', '<', $endUts)
-        ->orderBy('startUts')
-        ->get();
+        $futureBookingsQuery = UF\Booking::QueryBuilder()->where('user_id', $app->user->id)
+            ->where('startUts', '>=', $startUts)
+            ->where('endUts', '<', $endUts)
+            ->orderBy('startUts');
+
+        if ($period == 'plan') {
+            $futureBookingsQuery = $futureBookingsQuery->take(25);
+        }
+
+        $futureBookings = $futureBookingsQuery->get();
+        
 
         $app->render('bookings.twig', [
             "bookings" => $futureBookings,

@@ -267,7 +267,7 @@ table.body {
             
         } catch (\phpmailerException $e){
             print $e->errorMessage();
-            error_log('Mailer Error: ' . $e->errorMessage());
+    
             $app->halt(500);
         }
 
