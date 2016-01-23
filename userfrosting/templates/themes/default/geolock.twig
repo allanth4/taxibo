@@ -1,0 +1,170 @@
+{% extends "layouts/layout-dashboard.twig" %}
+{% set page_group = "pricing" %}
+
+{% block page %}   
+    {% set page = page | merge({
+        "title"       : "Geolock",
+        "description" : "A list of the groups to which you belong."
+    }) %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+
+    <h1>Geolock</h1>
+    <p>Click the map to set the first corner of the geolock area, then click the map again to set the opposit corner of the area. When you have a red area, click save.</p>
+    <p>Click a geolock area (<span style="color:blue">blue</span> rectangle) to <strong>delete</strong> it.</p>
+    <div class="row">
+        <form method="POST" action="{{site.uri.public}}/geolock">
+            <div class="col-sm-6">
+                <div class="row form-group has-success" id="start">
+
+                    <div class="col-sm-4">
+                        <label>Start</label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="double" id="start-lat" name="startLat" />
+                    </div>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="double" id="start-lng" name="startLng" />
+                    </div>
+                </div>
+
+                <div class="row form-group" id="end">
+
+                    <div class="col-sm-4">
+                        <label>End</label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="double" id="end-lat" name="endLat" />
+                    </div>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="double" id="end-lng" name="endLng" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-8">
+                        <input  class="form-control btn-primary" type="submit" value="Save" />
+                    </div>
+                </div>
+            </div>
+            <input type="hidden" name="csrf_token" value="{{csrf}}" />
+        </form>
+        <form method="POST" action="{{site.uri.public}}/geolock" id="deleteForm">
+            <input type="hidden" name="lat" id="deleteLat" value="0" />
+            <input type="hidden" name="lng" id="deleteLng" value="0" />
+            <input type="hidden" name="csrf_token" value="{{csrf}}" />
+            <input type="hidden" name="action"  value="delete" />
+        </form>
+        <div class="col-sm-6">
+
+            <div id="map" style="height: 500px; width: 100%"></div>
+
+        </div>
+    </div>
+    
+{% endblock %}
+
+
+{% block page_scripts %}
+<script>
+           
+var map;
+var rectangle;
+var geolocks;
+var g;
+var useStart;
+
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 59, lng: 15.5},
+        zoom: 6
+    });
+
+    geolocks = [];
+
+    {% for geolock in geolocks %}
+
+        var geolock = new google.maps.Rectangle({
+            strokeColor: '#000080',
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: '#4444ff',
+            fillOpacity: 0.35,
+            map: map,
+            bounds: {
+                north: {{geolock.north|escape}},
+                south: {{geolock.south|escape}},
+                east: {{geolock.east|escape}},
+                west: {{geolock.west|escape}}
+            }
+        });
+
+        geolock.set('id', {{geolock.id|escape}});
+        geolock.addListener('click', function(event){
+            console.log(event.latLng.toJSON());
+
+            $("#deleteLat").val(event.latLng.lat());
+            $("#deleteLng").val(event.latLng.lng());
+            $("#deleteForm").submit();
+        });
+        geolocks.push(geolock);
+
+    {% endfor %}
+    
+
+    useStart = true;
+
+    google.maps.event.addListener(map, 'click', function(event) {
+
+        if (typeof rectangle != 'undefined')
+            rectangle.setMap(null);
+
+        if (useStart) {
+            $('#start-lat').val(event.latLng.lat());
+            $('#start-lng').val(event.latLng.lng());
+            $('#end-lat').val("");
+            $('#end-lng').val("");
+            $("#start").removeClass("has-success");
+            $("#end").addClass("has-success");
+            
+        } else {
+            $('#end-lat').val(event.latLng.lat());
+            $('#end-lng').val(event.latLng.lng());
+            $("#end").removeClass("has-success");
+            $("#start").addClass("has-success");
+
+            var north = Math.max(parseFloat($('#start-lat').val()), parseFloat($('#end-lat').val()));
+            var south = Math.min(parseFloat($('#start-lat').val()), parseFloat($('#end-lat').val()));
+            var east = Math.max(parseFloat($('#start-lng').val()), parseFloat($('#end-lng').val()));
+            var west = Math.min(parseFloat($('#start-lng').val()), parseFloat($('#end-lng').val()));
+
+            
+
+            rectangle = new google.maps.Rectangle({
+                strokeColor: '#FF0000',
+                strokeOpacity: 0.8,
+                strokeWeight: 2,
+                fillColor: '#C00000',
+                fillOpacity: 0.35,
+                map: map,
+                bounds: {
+                    north: north,
+                    south: south,
+                    east: east,
+                    west: west
+                }
+            });
+
+        }
+        useStart = !useStart;
+        
+    });
+
+}
+
+        </script>
+        <script async defer
+      src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+    </script>
+        {% endblock %}

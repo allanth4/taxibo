@@ -1,0 +1,135 @@
+{% extends "layouts/layout-dashboard.twig" %}
+{% set page_group = "pricing" %}
+
+{% block page %}   
+    {% set page = page | merge({
+        "title"       : "Pricing",
+        "description" : "A list of the groups to which you belong."
+    }) %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+
+    <h1>Priser</h1>
+    
+    <div class="row">
+        <div class="col-sm-2"><strong>Veckodag</strong></div>
+        <div class="col-sm-10 col-md-8 col-lg-6">
+            <div class="row">
+                <div class="col-sm-3"><strong>Verksam</strong></div>
+                <div class="col-sm-3"><strong>Tid</strong></div>
+                <div class="col-sm-3"><strong>Timtaxa</strong></div>
+                <div class="col-sm-3"><strong>Km-taxa</strong></div>
+            </div>
+        </div>
+    </div>
+
+    <form method="POST" action="{{site.uri.public}}/pricing">
+        <input type="hidden" name="csrf_token" value="{{csrf}}" />
+        {% for key, pricing in pricings %}
+            <div class="row" style="margin-top: 20px">
+                <div class="col-sm-2">
+                    <label>{{ pricing.title|e }}</label>
+                </div>
+                <div class="col-sm-10 col-md-8 col-lg-6">
+
+                    <!-- A -->
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <input name="pricing[{{key}}][A][active]" type="checkbox" class="form-control" placeholder="Timepris" value="1" checked="checked" />
+                        </div>
+
+                        <div class="col-sm-3">
+                            <select name="pricing[{{key}}][A][hour]" class="form-control">
+                            
+                                <option value="0" selected="selected">Från kl. 0:00</option>
+                            
+                            </select>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <input name="pricing[{{key}}][A][hourlyRate]" type="number" class="form-control" placeholder="Timepris" value="{{ pricing.A.hourlyRate|e }}" />
+                        </div>
+                        <div class="col-sm-3">
+                            <input name="pricing[{{key}}][A][kmRate]" type="text" class="form-control" placeholder="Km pris" value="{{ pricing.A.kmRate|e }}" />
+                        </div>
+                    </div>
+
+                    <!-- B -->
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <input name="pricing[{{key}}][B][active]" type="checkbox" class="form-control" placeholder="Timepris" value="1" {% if pricing.B.active %}checked="checked"{% endif %} />
+                        </div>
+
+                        <div class="col-sm-3">
+                            <select name="pricing[{{key}}][B][hour]" class="form-control">
+                            {% for i in 0..23 %}
+                                <option value="{{i}}" {% if pricing.B.hour == i %}selected="selected"{% endif %}>Från kl. {{i}}:00</option>
+                            {% endfor %}
+                            </select>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <input name="pricing[{{key}}][B][hourlyRate]" type="number" class="form-control" placeholder="Timepris" value="{{ pricing.B.hourlyRate|e }}" />
+                        </div>
+                        <div class="col-sm-3">
+                            <input name="pricing[{{key}}][B][kmRate]" type="text" class="form-control" placeholder="Km pris" value="{{ pricing.B.kmRate|e }}" />
+                        </div>
+                    </div>
+
+                    <!-- C -->
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <input name="pricing[{{key}}][C][active]" type="checkbox" class="form-control" placeholder="Timepris" value="1" {% if pricing.C.active %}checked="checked"{% endif %} />
+                        </div>
+
+                        <div class="col-sm-3">
+                            <select name="pricing[{{key}}][C][hour]" class="form-control">
+                            {% for i in 0..23 %}
+                                <option value="{{i}}" {% if pricing.C.hour == i %}selected="selected"{% endif %}>Från kl. {{i}}:00</option>
+                            {% endfor %}
+                            </select>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <input name="pricing[{{key}}][C][hourlyRate]" type="number" class="form-control" placeholder="Timepris" value="{{ pricing.C.hourlyRate|e }}" />
+                        </div>
+                        <div class="col-sm-3">
+                            <input name="pricing[{{key}}][C][kmRate]" type="text" class="form-control" placeholder="Km pris" value="{{ pricing.C.kmRate|e }}" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        {% endfor %}
+
+        <div class="row" style="margin-top: 20px">
+            <div class="col-sm-2"><strong>Grundavgift</strong></div>
+            <div class="col-sm-10 col-md-8 col-lg-6">
+                <div class="row">
+                    <div class="col-sm-3 col-sm-offset-9">
+                        <input name="pricing[baseRate]" type="number" class="form-control" placeholder="Grundavgift" value="{{ baseRate|e }}" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row" style="margin-top: 20px">
+            <div class="col-sm-10 col-sm-offset-2 col-md-8 col-lg-6">
+                <div class="row">
+                    <div class="col-sm-3 col-sm-offset-9">
+                        <input type="submit" class="form-control btn-success" value="Spara" /> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+    
+{% endblock %}
+
+
+{% block page_scripts %}
+{% endblock %}

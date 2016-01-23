@@ -1,0 +1,79 @@
+{% extends "layouts/layout-dashboard.twig" %}
+{% set page_group = "cars" %}
+
+{% block page %}   
+    {% set page = page | merge({
+        "title"       : "Cars",
+        "description" : "A list of the groups to which you belong."
+    }) %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+
+    <h1>Bilar</h1>
+    
+    {% for key, car in cars %}
+    
+        <form method="POST" action="{{site.uri.public}}/cars">
+            <input type="hidden" name="csrf_token" value="{{csrf}}" />
+            <input type="hidden" name="id" value="{{car.id|e}}" />
+        
+            <div class="row" style="margin-top: 20px">
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="Name" value="{{car.title|e}}" name="title">
+                </div>
+                <div class="col-sm-3">
+                    <input type="email" class="form-control" placeholder="Email" value="{{car.email|e}}" name="email">
+                </div>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="Telefon" value="{{car.phone|e}}" name="phone">
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="submit" class="form-control btn btn-primary btn-block" name="save" value="Spara">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="submit" class="form-control btn btn-danger btn-block" name="delete" value="Radera">
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </form>
+    {% endfor %}
+
+        <h3>Lägg till en ny bil</h3>
+        <form method="POST" action="{{site.uri.public}}/cars">
+            <input type="hidden" name="csrf_token" value="{{csrf}}" />
+            
+            <div class="row" style="margin-top: 20px">
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="Namn" value="{{car.title|e}}" name="title">
+                </div>
+                <div class="col-sm-3">
+                    <input type="email" class="form-control" placeholder="Email" value="{{car.email|e}}" name="email">
+                </div>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="Telefon" value="{{car.phone|e}}" name="phone">
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="submit" class="form-control btn btn-primary btn-block" name="save" value="Spara">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="submit" class="form-control btn btn-danger btn-block" name="delete" value="Radera">
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </form>       
+    
+{% endblock %}
+
+
+{% block page_scripts %}
+{% endblock %}

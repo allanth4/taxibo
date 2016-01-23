@@ -1,0 +1,36 @@
+{% block subject %}
+    Tack för din taxibokning
+{% endblock %}
+
+{% block body %}
+
+	<p><strong>Din beställning har mottagits</strong></p>
+	<p>Du kommer att få ett mejl med den slutliga bekräftelsen.</p>
+
+	<table cellspacing="0" cellpadding="3" border="0">
+		<tr>
+			<td>
+				<p style="font-size: 17px">Tur</p>
+			</td>
+			<td>
+				<p style="font-size: 17px">{{booking.alphaId|e}}</p>
+			</td>
+		</tr>
+		<tr><td>Från</td><td>{{booking.origin|e}}</td></tr>
+		<tr><td>Till</td><td>{{booking.destination|e}}</td></tr>
+		<tr><td>Avrese</td><td>{{date|e}}</td></tr>
+		<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+		<tr><td>Körtid</td><td>{{booking.duration|e}}</td></tr>
+		<tr><td>Avstånd</td><td>{{booking.distance|e}}</td></tr>
+		<tr><td>Pris</td><td>{{booking.price}}:- kr</td></tr>
+		<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+		<tr><td>Namn</td><td>{{booking.name|e}}</td></tr>
+		<tr><td>Telefon</td><td>{{booking.phone|e}}</td></tr>
+		<tr><td>Email</td><td>{{booking.email|e}}</td></tr>
+		<tr><td>Antal personer</td><td>{{booking.passengerCount|e}}</td></tr>
+	</table>
+
+	<p>Tack för att du kör med {{client.title}}</p>
+
+
+{% endblock %}

@@ -1,0 +1,42 @@
+{% block subject %}
+    {{subject|e}}
+{% endblock %}
+
+{% block body %}
+
+	<p><strong>Ny beställning har mottagits</strong></p>
+
+	<table cellspacing="0" cellpadding="3" border="0">
+		<tr>
+			<td>
+				<p style="font-size: 17px">Tur</p>
+			</td>
+			<td>
+				<p style="font-size: 17px">{{booking.alphaId|e}}</p>
+			</td>
+		</tr>
+		<tr><td>Från</td><td>{{booking.origin|e}}</td></tr>
+		<tr><td>Till</td><td>{{booking.destination|e}}</td></tr>
+		<tr><td>Avrese</td><td>{{date|e}}</td></tr>
+		<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+		<tr><td>Körtid</td><td>{{booking.duration|e}}</td></tr>
+		<tr><td>Avstånd</td><td>{{booking.distance|e}}</td></tr>
+		<tr><td>Pris</td><td>{{booking.price}}:- kr</td></tr>
+		<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+		<tr><td>Namn</td><td>{{booking.name|e}}</td></tr>
+		<tr><td>Telefon</td><td>{{booking.phone|e}}</td></tr>
+		<tr><td>Email</td><td>{{booking.email|e}}</td></tr>
+		<tr><td>Antal personer</td><td>{{booking.passengerCount|e}}</td></tr>
+	</table>
+
+	<p>&nbsp;</p>
+
+    <a href="{{site.uri.public}}/booking/{{booking.id}}/accept/{{booking.hash}}" style="background-color: #8ea604; color: white; padding: 10px; border-radius: 5px;text-decoration: none;margin-right: 20px;">Acceptera</a>
+    
+    <a href="{{site.uri.public}}/booking/{{booking.id}}/reject/{{booking.hash}}" style="background-color: #C00000; color: white; padding: 10px; border-radius: 5px;text-decoration: none;">Avslå</a>
+
+    <p>&nbsp;</p>
+	
+    {{futureBookingsHtml|raw}}
+
+{% endblock %}

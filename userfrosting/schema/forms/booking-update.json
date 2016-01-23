@@ -1,0 +1,89 @@
+{
+    "origin" : {
+        "validators" : {
+            "length" : {
+                "min" : 1,
+                "max" : 100,
+                "message" : "ACCOUNT_DISPLAY_CHAR_LIMIT"
+            }
+        },
+        "sanitizers" : {
+            "raw" : ""
+        }
+    },          
+    "destination" : {
+        "validators" : {
+            "length" : {
+                "min" : 1,
+                "max" : 100,
+                "message" : "ACCOUNT_DISPLAY_CHAR_LIMIT"
+            }
+        },
+        "sanitizers" : {
+            "raw" : ""
+        }
+    },          
+    "date" : {
+        "validators" : {
+            "length" : {
+                "min" : 10,
+                "max" : 10,
+                "message" : "ACCOUNT_DISPLAY_CHAR_LIMIT"
+            }
+        },
+        "sanitizers" : {
+            "raw" : ""
+        }
+    },          
+    "time" : {
+        "validators" : {
+            "length" : {
+                "min" : 5,
+                "max" : 5,
+                "message" : "ACCOUNT_DISPLAY_CHAR_LIMIT"
+            }
+        },
+        "sanitizers" : {
+            "raw" : ""
+        }
+    },          
+    "name" : {
+        "validators" : {
+            "length" : {
+                "min" : 1,
+                "max" : 50,
+                "message" : "ACCOUNT_DISPLAY_CHAR_LIMIT"
+            }
+        },
+        "sanitizers" : {
+            "raw" : ""
+        }
+    },          
+    "phone" : {
+        "validators" : {
+            "length" : {
+                "min" : 1,
+                "max" : 50,
+                "message" : "ACCOUNT_DISPLAY_CHAR_LIMIT"
+            }
+        },
+        "sanitizers" : {
+            "raw" : ""
+        }
+    },          
+    "email" : {
+        "validators" : {
+            "length" : {
+                "min" : 1,
+                "max" : 150,
+                "message" : "ACCOUNT_EMAIL_CHAR_LIMIT"
+            },
+            "email" : {
+                "message" : "ACCOUNT_INVALID_EMAIL"
+            }
+        },
+        "sanitizers" : {
+            "raw" : ""
+        }
+    }
+}

@@ -1,0 +1,1334 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"PROD",
+				"production"
+			],
+			[
+				"geoloc",
+				"GeolockArea"
+			],
+			[
+				"book",
+				"bookingId"
+			],
+			[
+				"bookin",
+				"booking"
+			],
+			[
+				"get_Defin",
+				"get_defined_vars"
+			],
+			[
+				"boo",
+				"booking_id"
+			],
+			[
+				"start",
+				"startUts"
+			],
+			[
+				"star",
+				"startUts"
+			],
+			[
+				"offe",
+				"offerDurationValue"
+			],
+			[
+				"des",
+				"description"
+			],
+			[
+				"alert",
+				"alertBookingOffer"
+			],
+			[
+				"accep",
+				"Accepterad"
+			],
+			[
+				"conetn",
+				"contentHtml"
+			],
+			[
+				"conet",
+				"contentHtml"
+			],
+			[
+				"headerl",
+				"headerLine2"
+			],
+			[
+				"header",
+				"headerLine1"
+			],
+			[
+				"alpha",
+				"alphaId"
+			],
+			[
+				"alp",
+				"alphaId"
+			],
+			[
+				"AL",
+				"alpha2"
+			],
+			[
+				"alpa",
+				"alpha1"
+			],
+			[
+				"K",
+				"Körtid"
+			],
+			[
+				"destination",
+				"destinationCity"
+			],
+			[
+				"origin",
+				"originCity"
+			],
+			[
+				"bo",
+				"bookingModel"
+			],
+			[
+				"rou",
+				"routeTitle"
+			],
+			[
+				"dista",
+				"distancematrix"
+			],
+			[
+				"A",
+				"Afslå"
+			],
+			[
+				"client",
+				"clientId"
+			],
+			[
+				"Alla",
+				"AllanTh_TaxiBooking_Client"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"clien",
+				"clientName"
+			],
+			[
+				"clie",
+				"clientName"
+			],
+			[
+				"utf",
+				"utf8_decode"
+			],
+			[
+				"best",
+				"bestilling"
+			],
+			[
+				"journ",
+				"journeyId"
+			],
+			[
+				"All",
+				"AllanTh"
+			],
+			[
+				"offer",
+				"offerFrom"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"con",
+				"connection"
+			],
+			[
+				"pass",
+				"passengerCount"
+			],
+			[
+				"btn",
+				"btnBook"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"url",
+				"urldecode"
+			],
+			[
+				"set",
+				"setlocale"
+			],
+			[
+				"pos",
+				"_POST"
+			],
+			[
+				"s",
+				"start"
+			],
+			[
+				"mk",
+				"mktime"
+			],
+			[
+				"google",
+				"googleId"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"plac",
+				"place"
+			],
+			[
+				"four",
+				"foursquare"
+			],
+			[
+				"place",
+				"placeId"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"pro",
+				"propValue"
+			],
+			[
+				"prop",
+				"propertyValue"
+			],
+			[
+				"Ex",
+				"exit"
+			],
+			[
+				"access",
+				"accessToken"
+			],
+			[
+				"acc",
+				"accessToken"
+			],
+			[
+				"sho",
+				"showLngMin"
+			],
+			[
+				"Usernam",
+				"twitterUsername"
+			],
+			[
+				"deposi",
+				"deposits"
+			],
+			[
+				"member",
+				"memberQuery"
+			],
+			[
+				"_",
+				"_POST"
+			],
+			[
+				"mails",
+				"mailSentCount"
+			],
+			[
+				"user",
+				"USER"
+			],
+			[
+				"depo",
+				"depositsOffset"
+			],
+			[
+				"deposit",
+				"depositsTop"
+			],
+			[
+				"window",
+				"windowWidth"
+			],
+			[
+				"current",
+				"currentDay"
+			],
+			[
+				"file",
+				"fileName"
+			],
+			[
+				"POD",
+				"podcastFolders"
+			],
+			[
+				"PRINT",
+				"print_r"
+			],
+			[
+				"re",
+				"regions"
+			],
+			[
+				"region",
+				"regionQuery"
+			],
+			[
+				"count",
+				"countryTitle"
+			],
+			[
+				"country",
+				"countryTitle"
+			],
+			[
+				"cou",
+				"countryQuery"
+			],
+			[
+				"new",
+				"newQuantity"
+			],
+			[
+				"depos",
+				"depositQuery"
+			],
+			[
+				"em",
+				"errorMessage"
+			],
+			[
+				"su",
+				"successMessage"
+			],
+			[
+				"html",
+				"htmlspecialchars"
+			],
+			[
+				"lat",
+				"lat"
+			],
+			[
+				"refre",
+				"refreshSeconds"
+			],
+			[
+				"ref",
+				"refreshSeconds"
+			],
+			[
+				"recta",
+				"rectangle"
+			],
+			[
+				"rec",
+				"rectangle"
+			],
+			[
+				"rectan",
+				"rectangles"
+			],
+			[
+				"exists",
+				"file_exists"
+			],
+			[
+				"la",
+				"latLng"
+			],
+			[
+				"EXE",
+				"execute"
+			],
+			[
+				"shelf",
+				"shelfId"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"addwineco",
+				"addWineCountryCode"
+			],
+			[
+				"COUN",
+				"country"
+			],
+			[
+				"addwin",
+				"addWinePrice"
+			],
+			[
+				"qu",
+				"addWineQuantity"
+			],
+			[
+				"shel",
+				"shelfId"
+			],
+			[
+				"bott",
+				"bottleId"
+			],
+			[
+				"isn",
+				"is_numeric"
+			],
+			[
+				"bottle",
+				"bottle-highlight"
+			],
+			[
+				"op",
+				"optgroup	Tag"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"dis",
+				"distance"
+			],
+			[
+				"starbu",
+				"starbuckArray"
+			],
+			[
+				"arra",
+				"starbuckArray"
+			],
+			[
+				"sta",
+				"starbuckArray"
+			],
+			[
+				"exp",
+				"explode"
+			],
+			[
+				"backgr",
+				"background"
+			],
+			[
+				"reque",
+				"requestUri"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"thum",
+				"thumbnail_container"
+			],
+			[
+				"bmi",
+				"bmiLabel"
+			],
+			[
+				"str_r",
+				"str_replace"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"fini",
+				"FINISHED"
+			],
+			[
+				"ROU",
+				"roundId"
+			],
+			[
+				"VOT",
+				"votingTree_vote"
+			],
+			[
+				"canva",
+				"canvasWidth"
+			],
+			[
+				"svg",
+				"svgString"
+			],
+			[
+				"can",
+				"canvasHeight"
+			],
+			[
+				"get",
+				"getBBox"
+			],
+			[
+				"rect",
+				"rectWidth"
+			],
+			[
+				"shi",
+				"shiftX"
+			],
+			[
+				"tex",
+				"textNode"
+			],
+			[
+				"width",
+				"widthTransform"
+			],
+			[
+				"is_n",
+				"is_null"
+			],
+			[
+				"poin",
+				"point_2"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "userfrosting/models/database/Booking.php",
+			"settings":
+			{
+				"buffer_size": 4068,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/index.php",
+			"settings":
+			{
+				"buffer_size": 22891,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "userfrosting/templates/themes/default/geolock.twig",
+			"settings":
+			{
+				"buffer_size": 5610,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "userfrosting/config-userfrosting.php",
+			"settings":
+			{
+				"buffer_size": 5300,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "userfrosting/initialize.php",
+			"settings":
+			{
+				"buffer_size": 13765,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "userfrosting/templates/themes/default/components/dashboard/menus/sidebar.twig",
+			"settings":
+			{
+				"buffer_size": 2468,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "userfrosting/templates/themes/default/booking.twig",
+			"settings":
+			{
+				"buffer_size": 4476,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "userfrosting/templates/themes/default/bookings.twig",
+			"settings":
+			{
+				"buffer_size": 1877,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/www/sites/taxibo",
+		"/www/sites/taxibo/wwwroot",
+		"/www/sites/taxibo/wwwroot/public",
+		"/www/sites/taxibo/wwwroot/userfrosting",
+		"/www/sites/taxibo/wwwroot/userfrosting/controllers",
+		"/www/sites/taxibo/wwwroot/userfrosting/plugins",
+		"/www/sites/taxibo/wwwroot/userfrosting/plugins/example",
+		"/www/sites/taxibo/wwwroot/userfrosting/schema",
+		"/www/sites/taxibo/wwwroot/userfrosting/schema/forms",
+		"/www/sites/taxibo/wwwroot/userfrosting/templates",
+		"/www/sites/taxibo/wwwroot/userfrosting/templates/themes",
+		"/www/sites/taxibo/wwwroot/userfrosting/templates/themes/default"
+	],
+	"file_history":
+	[
+		"/www/sites/taxibo/wwwroot/userfrosting/initialize.php",
+		"/www/sites/taxibo/wwwroot/userfrosting/vendor/slim/slim/Slim/Http/Request.php",
+		"/www/sites/taxibo/wwwroot/userfrosting/templates/themes/default/home.twig",
+		"/www/sites/taxibo/wwwroot/userfrosting/schema/forms/booking-update.json",
+		"/www/sites/taxibo/wwwroot/userfrosting/middleware/CsrfGuard.php",
+		"/www/sites/taxibo/wwwroot/userfrosting/config-userfrosting.php",
+		"/www/sites/taxibo/wwwroot/userfrosting/vendor/alexweissman/fortress/README.md",
+		"/www/sites/taxibo/wwwroot/userfrosting/controllers/UserController.php",
+		"/www/sites/taxibo/wwwroot/userfrosting/vendor/illuminate/contracts/Foundation/Application.php",
+		"/www/sites/taxibo/wwwroot/userfrosting/vendor/illuminate/database/Query/Builder.php",
+		"/www/sites/taxibo/wwwroot/public/js/widget-users.js",
+		"/www/sites/taxibo/wwwroot/userfrosting/vendor/slim/slim/Slim/Slim.php",
+		"/www/sites/taxibo/wwwroot/userfrosting/vendor/slim/slim/Slim/Router.php",
+		"/www/sites/taxibo/wwwroot/userfrosting/vendor/slim/slim/index.php",
+		"/www/sites/taxibo/wwwroot/userfrosting/vendor/composer/installed.json",
+		"/www/sites/taxibo/wwwroot/userfrosting/vendor/illuminate/contracts/Console/Application.php",
+		"/www/sites/taxibo/wwwroot/userfrosting/models/database/User.php",
+		"/www/sites/taxibo/wwwroot/userfrosting/vendor/illuminate/support/Facades/App.php",
+		"/www/sites/taxibo/wwwroot/index.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/calendar.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/index.php",
+		"/Users/allanth/Desktop/madrid.svg",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/ClientFYRS.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/autocomplete.js",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/Journey.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/Mail.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/DB.php",
+		"/Users/allanth/Dropbox/1jan.txt",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/saveOpeningHours.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/foursquare.html",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/google.html",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/facebook.html",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/index.html",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/event.tpl",
+		"/Users/allanth/Downloads/batch-upload-example (son).csv",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/member.tpl",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/log-2015-307-13.log",
+		"/Users/allanth/Dropbox/Development/WordPress/wp-admin/freedoms.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/DB.class.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/controller.association.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/setup.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/shelves.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/index 2.php",
+		"/Users/allanth/Desktop/wine.html",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/facebookLogin.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/profile-753975970.txt",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/case.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/wynio.js",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/frameMap.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/all.txt",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/frameGetData.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/addBottle.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/TableRow.class.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/bottle.php",
+		"/Users/allanth/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/mysqlite3.php",
+		"/Users/allanth/Dropbox/Development/wynio/index.html",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/palermo.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/maxWeight.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/nearestCityLL.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/controller.user.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/header.tpl",
+		"/Users/allanth/Desktop/Generalforsamling ViV",
+		"/Users/allanth/Desktop/DSB bøde",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/temperatur_config.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/tree.php",
+		"/Users/allanth/Dropbox/Development/Sites/portal/css/votingtree.css",
+		"/Users/allanth/Dropbox/Development/Sites/portal/index.php",
+		"/Users/allanth/Documents/nearestCityLL.php",
+		"/Users/allanth/Dropbox/Development/electionResultVisualization/v-sydjylland-data.json",
+		"/Users/allanth/Dropbox/Development/electionResultVisualization/br.json",
+		"/Users/allanth/Dropbox/Development/electionResultVisualization/v-ostjylland-data.json",
+		"/Users/allanth/Dropbox/Development/Sites/tree.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/login.php",
+		"/Users/allanth/Dropbox/Development/electionResultVisualization/data.json",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/FacebookRedirectLoginHelper.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/I18n.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/autoload.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/kontakt.php",
+		"/Library/WebServer/Documents/BeerVote/reset.css",
+		"/Library/WebServer/Documents/WineShelf/updateShelves.php",
+		"/Library/WebServer/Documents/WineShelf/autoload.php",
+		"/Library/WebServer/Documents/WineShelf/index.php",
+		"/Users/allanth/Downloads/side-team-member-bio/index.html",
+		"/Library/WebServer/Documents/WineShelf/data/config.case.xml",
+		"/Library/WebServer/Documents/WineShelf/edit.php",
+		"/Library/WebServer/Documents/WineShelf/shelves.php",
+		"/Library/WebServer/Documents/WineShelf/index.html",
+		"/Library/WebServer/Documents/WineShelf/config.case.xml",
+		"/Users/allanth/Desktop/WineShelf/index.html",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/usersByTweetCount.php",
+		"/Users/allanth/Desktop/WineShelf/flags.css",
+		"/Users/allanth/Desktop/vinkaelder.html",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/TwitterWrapper.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/conversations.php",
+		"/private/var/folders/zz/y5zdkqw11yv2btyvl9y6r3tr0000gn/T/fz3temp-1/Flojtr.class.php",
+		"/Users/allanth/Downloads/ZendOAuth/library/ZendOAuth/Consumer.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"post",
+			"erro",
+			"avignon",
+			"log",
+			"error_log",
+			"post",
+			"error_log(\"po",
+			"deleteLat",
+			"error_log(\"index.php line: \" . __LINE__ . PHP_EOL);",
+			"geolocks[g]",
+			"north",
+			"booking",
+			"-l",
+			"$geolockArea->",
+			"book",
+			"bookings",
+			"uri_in",
+			"uri_install",
+			"redir",
+			"session",
+			"get(",
+			"get",
+			"400",
+			"csrf",
+			"token",
+			"csrf",
+			"token",
+			"400",
+			"name=\"",
+			"booki",
+			"$app->post",
+			"error_log",
+			"->post",
+			"error",
+			"GeolockArea",
+			"lat",
+			"id=\"e",
+			"id",
+			"$(",
+			"$('#start",
+			"start-",
+			"start",
+			"start-",
+			"lmg",
+			"book",
+			"booking",
+			"route",
+			"rou",
+			"namedroutes",
+			"getnamedroute",
+			"hasnamedrout",
+			"->router",
+			"uri",
+			"urlfor",
+			"deleteuserdia",
+			"default",
+			"inputEmail",
+			"x",
+			"response",
+			"10,",
+			"\\",
+			"col-sm-10",
+			"inputDate",
+			"inputDestination",
+			"inputName",
+			"dashbo",
+			"dashboard",
+			"Email",
+			"email",
+			"Email",
+			"inputEmail",
+			"booking",
+			"data",
+			"post",
+			"$this->_app",
+			"error_log",
+			"or_lg",
+			"inputEmail3",
+			"            ",
+			"           ",
+			"          ",
+			"         ",
+			"        ",
+			"       ",
+			"      ",
+			"$booking[0]",
+			"one",
+			"404",
+			"<a",
+			" role=\"button\"",
+			"<a",
+			"week",
+			"lasteventtime",
+			"}}</",
+			">",
+			"user",
+			"book",
+			"bookin",
+			"booking",
+			"userfr",
+			"uts",
+			"$uts",
+			"new allan",
+			"origin",
+			"$booking->getUts()",
+			"$foredrag",
+			"bcc",
+			"alertbo",
+			"future",
+			"abookin",
+			"sendb",
+			"send",
+			"mail",
+			"span",
+			"future",
+			"http://allanth.dk/limo",
+			"taxibook",
+			"reject",
+			"accept",
+			"nt-size: 28px",
+			"$booking",
+			"booking",
+			"originCity",
+			"14",
+			"originCity",
+			"routeTitle",
+			"originCity",
+			"routeTitle"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "userfrosting/models/database/Booking.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4068,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1525,
+								1527
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 525.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "public/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22891,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4789,
+								4789
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2121.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "userfrosting/templates/themes/default/geolock.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5610,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4189,
+								4189
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2242.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "userfrosting/config-userfrosting.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5300,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								493,
+								495
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "userfrosting/initialize.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13765,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13765,
+								13765
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5234.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "userfrosting/templates/themes/default/components/dashboard/menus/sidebar.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2468,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								863,
+								863
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "userfrosting/templates/themes/default/booking.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4476,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3836,
+								3836
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1168.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "userfrosting/templates/themes/default/bookings.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1877,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1387,
+								1387
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 132.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Taxibo.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ini",
+				"wwwroot/userfrosting/initialize.php"
+			],
+			[
+				"confi",
+				"wwwroot/userfrosting/config-userfrosting.php"
+			],
+			[
+				"bookings.t",
+				"wwwroot/userfrosting/templates/themes/default/bookings.twig"
+			],
+			[
+				"geoloc",
+				"wwwroot/userfrosting/templates/themes/default/geolock.twig"
+			],
+			[
+				"csr",
+				"wwwroot/userfrosting/middleware/CsrfGuard.php"
+			],
+			[
+				"http/reu",
+				"wwwroot/userfrosting/vendor/slim/slim/Slim/Http/Request.php"
+			],
+			[
+				"fortressrea",
+				"wwwroot/userfrosting/vendor/alexweissman/fortress/README.md"
+			],
+			[
+				"appli",
+				"wwwroot/userfrosting/vendor/illuminate/contracts/Foundation/Application.php"
+			],
+			[
+				"usercon",
+				"wwwroot/userfrosting/controllers/UserController.php"
+			],
+			[
+				"public/id",
+				"wwwroot/public/index.php"
+			],
+			[
+				"slim/inde",
+				"wwwroot/userfrosting/vendor/slim/slim/index.php"
+			],
+			[
+				"instale",
+				"wwwroot/userfrosting/vendor/composer/installed.json"
+			],
+			[
+				"usercont",
+				"wwwroot/userfrosting/controllers/UserController.php"
+			],
+			[
+				"slim/router",
+				"wwwroot/userfrosting/vendor/slim/slim/Slim/Router.php"
+			],
+			[
+				"slim",
+				"wwwroot/userfrosting/vendor/slim/slim/Slim/Slim.php"
+			],
+			[
+				"router",
+				"wwwroot/userfrosting/vendor/slim/slim/Slim/Router.php"
+			],
+			[
+				"slim.ph",
+				"wwwroot/userfrosting/vendor/slim/slim/Slim/Slim.php"
+			],
+			[
+				"applica",
+				"wwwroot/userfrosting/vendor/illuminate/contracts/Console/Application.php"
+			],
+			[
+				"widget-user",
+				"wwwroot/public/js/widget-users.js"
+			],
+			[
+				"app",
+				"wwwroot/userfrosting/vendor/illuminate/contracts/Foundation/Application.php"
+			],
+			[
+				"sidebar",
+				"wwwroot/userfrosting/templates/themes/default/components/dashboard/menus/sidebar.twig"
+			],
+			[
+				"home.t",
+				"wwwroot/userfrosting/templates/themes/default/home.twig"
+			],
+			[
+				"booking",
+				"wwwroot/userfrosting/schema/forms/booking-update.json"
+			],
+			[
+				"user.php",
+				"wwwroot/userfrosting/models/database/User.php"
+			],
+			[
+				"query/build",
+				"wwwroot/userfrosting/vendor/illuminate/database/Query/Builder.php"
+			],
+			[
+				"bookingsw",
+				"wwwroot/userfrosting/templates/themes/default/bookings.twig"
+			],
+			[
+				"shelv",
+				"shelves.php"
+			],
+			[
+				"inde",
+				"index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 261.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

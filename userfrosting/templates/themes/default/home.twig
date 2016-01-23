@@ -1,0 +1,24 @@
+{% extends "layouts/layout-jumbotron.twig" %}
+{% set page_group = "loggedout" %}
+
+{% block page %}
+    {# By putting this in a special block, we ensure that it will be set AFTER the default values are set in the parent template, 
+    but BEFORE the page itself is rendered. #}
+    
+    
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}    
+
+    <img src="{{site.uri.image}}/edsel-ranger.jpg" class="img-responsive" alt="Responsive image">
+    <h3>{{site.site_title}}</h3>
+    <p class="lead">Manage your taxi bookings.</p>
+    {% include 'components/common/alerts.twig' %}	
+    <div class="row">
+        <div class="col-xs-8 col-xs-2 col-sm-4 col-sm-offset-4">
+          <a href="{{site.uri.public}}/account/login" class="btn btn-success btn-block" role="button" value="Login">Login</a>
+        </div>
+    </div>
+    {% include 'components/jumbotron/jumbotron-links.twig' %}	
+{% endblock %}
