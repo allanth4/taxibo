@@ -78,7 +78,7 @@
                 $car = UF\Car::where('user_id', $app->user->id)->where('id', $post['id'])->first();
             }
             
-            foreach(['title', 'email', 'phone'] as $field) {
+            foreach(['title', 'email', 'phone', 'maxPassengerCount'] as $field) {
                 if (!empty($post[$field])) {
                     $car->$field = $post[$field];
                 }
@@ -116,6 +116,7 @@
             $car->title = "Standardbil";
             $car->email = "";
             $car->phone = "";
+            $car->maxPassengerCount = 0;
             $car->save();
 
             $cars = UF\Car::where('user_id', $app->user->id)->get();

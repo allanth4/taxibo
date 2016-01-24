@@ -72,7 +72,7 @@ class BookingController extends \UserFrosting\BaseController {
 
             $booking->duration = $offer->offerDuration;
             $booking->distance = $offer->offerDistance;
-            $booking->price = rand(100,999); // $offer->offerPrice;
+            $booking->price = $offer->offerPrice;
 
             $booking->name = $name;
             $booking->email = $email;
@@ -390,10 +390,17 @@ class BookingController extends \UserFrosting\BaseController {
     private function getPriceOnePeriod($pricings, $startHours, $endHours, $takstSymbol, $kms) {
 
         $hours = $endHours - $startHours;
+        
         $hourPrice = $pricings[$takstSymbol]['hourPrice'];
+        $hoursPrice = $hours * $hourPrice;
+        
         $kmPrice = $pricings[$takstSymbol]['kmPrice'];
+        $kmsPrice = $kms * $kmPrice;
+        
         $price = $hours * $hourPrice + $kms * $kmPrice;
 
+        error_log(implode(", ", ['hours', $hours, 'hourPrice', $hourPrice, 'hoursPrice', $hoursPrice, 'kms',
+         $kms, 'kmPrice', $kmPrice, 'kmsPrice', $kmsPrice, 'price', $price]));
         return $price;
     }
 

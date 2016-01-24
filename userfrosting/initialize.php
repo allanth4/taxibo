@@ -139,7 +139,7 @@ $table_car = new \UserFrosting\DatabaseTable($app->config('db')['db_prefix'] . "
     "created_at",
     "updated_at",
     "user_id",
-    "title", "email", "phone"
+    "title", "email", "phone", "maxPassengerCount"
 ]);
 
 $table_group_user = new \UserFrosting\DatabaseTable($app->config('db')['db_prefix'] . "group_user");

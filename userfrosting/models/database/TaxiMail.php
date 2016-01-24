@@ -198,7 +198,7 @@ table.body {
         $notification->from("taxibo@allanth.dk", $user->title, $user->email, $user->title);
 
         // future bookings
-        $bookings = Booking::where('user_id', $userId)->where('startUts', '>', (time() - 21600))->get();
+        $bookings = Booking::where('user_id', $userId)->where('id', '!=', $booking->id)->where('startUts', '>', (time() - 21600))->get();
         
         $htmlRows = array();
 

@@ -20,27 +20,35 @@
             <input type="hidden" name="id" value="{{car.id|e}}" />
         
             <div class="row" style="margin-top: 20px">
-                <div class="col-sm-3">
-                    <input type="text" class="form-control" placeholder="Name" value="{{car.title|e}}" name="title">
-                </div>
-                <div class="col-sm-3">
-                    <input type="email" class="form-control" placeholder="Email" value="{{car.email|e}}" name="email">
-                </div>
-                <div class="col-sm-3">
-                    <input type="text" class="form-control" placeholder="Telefon" value="{{car.phone|e}}" name="phone">
-                </div>
-
-                <div class="col-sm-3">
+                <div class="col-sm-10">
                     <div class="row">
-                        <div class="col-sm-6">
-                            <input type="submit" class="form-control btn btn-primary btn-block" name="save" value="Spara">
+
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" placeholder="Name" value="{{car.title|e}}" name="title">
                         </div>
-                        <div class="col-sm-6">
-                            <input type="submit" class="form-control btn btn-danger btn-block" name="delete" value="Radera">
+                        <div class="col-sm-3">
+                            <input type="email" class="form-control" placeholder="Email" value="{{car.email|e}}" name="email">
                         </div>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" placeholder="Telefon" value="{{car.phone|e}}" name="phone">
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="number" class="form-control" placeholder="Antal passagerare" value="{{car.maxPassengerCount|e}}" name="maxPassengerCount">
+                        </div>
+
                     </div>
                 </div>
-            </div>            
+                <div class="col-sm-1">
+                    <button type="submit" class="form-control btn btn-success btn-block" name="save">
+                        <i class="fa fa-save fa-lg"></i>
+                    </button>
+                </div>
+                <div class="col-sm-1">
+                    <button type="submit" class="form-control btn btn-danger btn-block" name="save">
+                        <i class="fa fa-trash fa-lg"></i>
+                    </button>
+                </div>
+            </div>  
         </form>
     {% endfor %}
 
@@ -49,27 +57,32 @@
             <input type="hidden" name="csrf_token" value="{{csrf}}" />
             
             <div class="row" style="margin-top: 20px">
-                <div class="col-sm-3">
-                    <input type="text" class="form-control" placeholder="Namn" value="{{car.title|e}}" name="title">
-                </div>
-                <div class="col-sm-3">
-                    <input type="email" class="form-control" placeholder="Email" value="{{car.email|e}}" name="email">
-                </div>
-                <div class="col-sm-3">
-                    <input type="text" class="form-control" placeholder="Telefon" value="{{car.phone|e}}" name="phone">
-                </div>
 
-                <div class="col-sm-3">
+                <div class="col-sm-10">
                     <div class="row">
-                        <div class="col-sm-6">
-                            <input type="submit" class="form-control btn btn-primary btn-block" name="save" value="Spara">
+
+
+
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" placeholder="Namn" name="title">
                         </div>
-                        <div class="col-sm-6">
-                            <input type="submit" class="form-control btn btn-danger btn-block" name="delete" value="Radera">
+                        <div class="col-sm-3">
+                            <input type="email" class="form-control" placeholder="Email" name="email">
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" placeholder="Telefon" name="phone">
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="number" class="form-control" placeholder="Antal passagerare" name="maxPassengerCount">
                         </div>
                     </div>
                 </div>
-            </div>            
+                <div class="col-sm-1">
+                    <button type="submit" class="form-control btn btn-success btn-block" name="save">
+                        <i class="fa fa-save fa-lg"></i>
+                    </button>
+                </div>
+            </div>        
         </form>       
     
 {% endblock %}
