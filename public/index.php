@@ -189,11 +189,6 @@
 
 
     $app->get('/dashboard/?', function () use ($app) {    
-        // Access-controlled page
-        if (!$app->user->checkAccess('uri_dashboard')){
-            $app->notFound();
-        }
-
 
         $futureBookings = UF\Booking::QueryBuilder()->where('user_id', $app->user->id)
             ->where('startUts', '>=', strtotime('today'))->get();

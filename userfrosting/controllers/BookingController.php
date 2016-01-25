@@ -411,7 +411,7 @@ class BookingController extends \UserFrosting\BaseController {
     {
         $nextBooking =  Booking::where('status', 'accepted')->where('startUts', '>=', time())->orderBy('startUts')->where('user_id', UserFrosting::getInstance()->user->id)->first();
         if (empty($nextBooking)) {
-            $nextBooking = Booking::where('status', 'accepted')->orderBy('startUts DESC')->where('user_id', UserFrosting::getInstance()->user->id)->first();
+            $nextBooking = Booking::where('status', 'accepted')->orderBy('startUts', 'desc')->where('user_id', UserFrosting::getInstance()->user->id)->first();
         }
         return $nextBooking;
     }
