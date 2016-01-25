@@ -193,8 +193,54 @@
         if (!$app->user->checkAccess('uri_dashboard')){
             $app->notFound();
         }
+
+
+        $futureBookings = UF\Booking::QueryBuilder()->where('user_id', $app->user->id)
+            ->where('startUts', '>=', strtotime('today'))->get();
+
+        $futureRejectedBookingsCount = 0;
+        $futureAcceptedBookingsCount = 0;
+        $futureNewBookingsCount = 0;
+        $futureTotalBookingsCount = 0;
+
+        foreach($futureBookings as $booking) {
+
+            
+            //error_log(print_r($booking, 1));
+            $futureTotalBookingsCount++;
+            switch ($booking['status']) {
+                case 'new':
+                    $futureNewBookingsCount++;
+                    break;
+                case 'accepted':
+                    $futureAcceptedBookingsCount++;
+                    break;
+                case 'rejected':
+
+                    $futureRejectedBookingsCount++;
+                    break;
+                default:
+
+                    exit;
+            }
+        }
+
+        $weekStats = UF\BookingController::getWeekStats();
         
-        $app->render('dashboard.twig', []);          
+        $nextBooking = UF\BookingController::getNextBooking();
+
+
+        $app->render('dashboard.twig', [
+            'futureNewBookingsCount' => $futureNewBookingsCount,
+            'futureRejectedBookingsCount' => $futureRejectedBookingsCount,
+            'futureAcceptedBookingsCount' => $futureAcceptedBookingsCount,
+            'futureTotalBookingsCount' => $futureTotalBookingsCount,
+            'chartJson' => $weekStats->json,
+            'chartTitle' => $weekStats->title,
+            'nextBooking' => $nextBooking,
+            'nextBookingStartDate' => $nextBooking ? strftime('%A %e %B %Y', $nextBooking->startUts) : '',
+            'nextBookingStartTime' => $nextBooking ? strftime('%H.%M (%Z)', $nextBooking->startUts) : '',
+        ]);
     });
     
     $app->get('/zerg/?', function () use ($app) {    

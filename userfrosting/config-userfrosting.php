@@ -2,11 +2,13 @@
     // Set your timezone here
     date_default_timezone_set('Europe/Stockholm');
     mb_internal_encoding('UTF-8');
-    setlocale(LC_TIME, 'sv_SE.UTF-8');
+    
     if ($_SERVER['SERVER_NAME'] =='ec2-52-59-247-193.eu-central-1.compute.amazonaws.com') {
         setlocale(LC_TIME, 'sv_SE.utf8');
+    } else {
+        setlocale(LC_TIME, 'sv_SE.UTF-8');
     }
-
+    
 
     // Do not send fatal errors to the response body!
     ini_set("display_errors", "on");

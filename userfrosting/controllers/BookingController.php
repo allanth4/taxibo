@@ -399,8 +399,7 @@ class BookingController extends \UserFrosting\BaseController {
         
         $price = $hours * $hourPrice + $kms * $kmPrice;
 
-        error_log(implode(", ", ['hours', $hours, 'hourPrice', $hourPrice, 'hoursPrice', $hoursPrice, 'kms',
-         $kms, 'kmPrice', $kmPrice, 'kmsPrice', $kmsPrice, 'price', $price]));
+        //error_log(implode(", ", ['hours', $hours, 'hourPrice', $hourPrice, 'hoursPrice', $hoursPrice, 'kms', $kms, 'kmPrice', $kmPrice, 'kmsPrice', $kmsPrice, 'price', $price]));
         return $price;
     }
 
@@ -408,5 +407,46 @@ class BookingController extends \UserFrosting\BaseController {
         return intval(strftime("%H", $uts)) + intval(strftime("%M", $uts)) / 60;
     }
 
+    public static function getNextBooking()
+    {
+        $nextBooking =  Booking::where('status', 'accepted')->where('startUts', '>=', time())->orderBy('startUts')->where('user_id', UserFrosting::getInstance()->user->id)->first();
+        if (empty($nextBooking)) {
+            $nextBooking = Booking::where('status', 'accepted')->orderBy('startUts DESC')->where('user_id', UserFrosting::getInstance()->user->id)->first();
+        }
+        return $nextBooking;
+    }
+
+    public static function getWeekStats() 
+    {
+        $dateTime = new \DateTime('First Monday of this month');
+        $startUts = $dateTime->format('U');
+        $dateTime->modify('+6 week');
+        $endUts = $dateTime->format('U');
+        
+        $bookings = Booking::where('startUts', '>=', $startUts)->where('startUts', '<', $endUts)->where('user_id', UserFrosting::getInstance()->user->id)->get(['startUts','status']);
+
+        $data = array();
+        foreach ($bookings as $booking) {
+            $week = strftime('%G W%V', $booking->startUts);
+
+            if (!isset($data[$week])) {
+                $data[$week] = array(
+                    'period' => $week,
+                    'new' => 0,
+                    'accepted' => 0,
+                    'rejected' => 0,
+                );
+            }
+
+            $data[$week][$booking->status]++;
+            
+        }
+        $response = new \StdClass;
+        $response->data = $data;
+        $response->json = json_encode(array_values($data));
+        $response->title = strftime('%e %b', $startUts) . ' - ' . strftime('%e %b', $endUts - 10800);
+        
+        return $response;
+    }
 
 }

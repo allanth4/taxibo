@@ -104,7 +104,7 @@ class Booking extends UFModel {
         
          if ($name == "car") {
             return $this->getCar();
-         }
+         } 
             
         /*
         else if ($name == "last_sign_in_time")
