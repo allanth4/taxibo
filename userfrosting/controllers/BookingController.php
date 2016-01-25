@@ -150,7 +150,7 @@ class BookingController extends \UserFrosting\BaseController {
             $minutes = intval(($obj->rows[0]->elements[0]->duration->value) / 60);
             $kms = round(($obj->rows[0]->elements[0]->distance->value) / 1000);
 
-            $priceObject = $this->calculatePrice($uts, $uts + $response->offerDurationValue, $kms);
+            $priceObject = $this->calculatePrice($userId, $uts, $uts + $response->offerDurationValue, $kms);
 
             $response->offerPrice = $priceObject->priceRoundedZero;
             $response->priceObject = $priceObject;
@@ -172,7 +172,7 @@ class BookingController extends \UserFrosting\BaseController {
      * @param int End time timestamp    
      * @param int Kilometres 
      */
-    public function calculatePrice($startUts, $endUts, $kms) 
+    public function calculatePrice($userId, $startUts, $endUts, $kms) 
     {
 
         $startDate = strftime('%F', $startUts);
@@ -247,7 +247,7 @@ class BookingController extends \UserFrosting\BaseController {
 
         //error_log("calculatePrice (".__LINE__.") userId: " . print_r($this->_app->user->id,1));
 
-        $dbPricing = Pricing::where('user_id', $this->_app->user->id)->first();
+        $dbPricing = Pricing::where('user_id', $userId)->first();
 
         
 
