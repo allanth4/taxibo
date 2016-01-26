@@ -573,7 +573,7 @@
         $futureBookingsQuery = UF\Booking::QueryBuilder()->where('user_id', $app->user->id)
             ->where('startUts', '>=', $startUts)
             ->where('endUts', '<', $endUts)
-            ->orderBy('startUts');
+            ->orderBy('startUts'); // important
 
         if ($period == 'plan') {
             $futureBookingsQuery = $futureBookingsQuery->take(25);
@@ -585,6 +585,8 @@
         $app->render('bookings.twig', [
             "bookings" => $futureBookings,
             "period" => $period,
+            "todayUts" => (new DateTime('today'))->getTimestamp(),
+            "todaysDate" => strftime("%A %e %B %Y", $startUts)
         ]); 
 
     })->name('bookings');
