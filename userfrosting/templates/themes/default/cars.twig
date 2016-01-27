@@ -20,7 +20,7 @@
             <input type="hidden" name="id" value="{{car.id|e}}" />
         
             <div class="row" style="margin-top: 20px">
-                <div class="col-sm-10">
+                <div class="col-sm-7">
                     <div class="row">
 
                         <div class="col-sm-3">
@@ -35,9 +35,37 @@
                         <div class="col-sm-3">
                             <input type="number" class="form-control" placeholder="Antal passagerare" value="{{car.maxPassengerCount|e}}" name="maxPassengerCount">
                         </div>
-
                     </div>
                 </div>
+                <div class="col-sm-1">
+                    <button disabled class="btn btn-success btn-block" style="opacity: 1;background-color:{{car.color|e}};border-color:{{car.color|e}};"><i class="fa fa-taxi fa-wide"></i></button>
+                </div>
+                <div class="col-sm-2">
+                    <select name="color" class="form-control">
+
+                        <option {% if car.color == "#1abc9c" %}selected="selected"{% endif %} value="#1abc9c">Turquioise</option>
+                        <option {% if car.color == "#16a085" %}selected="selected"{% endif %} value="#16a085">Green Sea</option>
+                        <option {% if car.color == "#2ecc71" %}selected="selected"{% endif %} value="#2ecc71">Emerald</option>
+                        <option {% if car.color == "#27ae60" %}selected="selected"{% endif %} value="#27ae60">Nephritis</option>
+                        <option {% if car.color == "#3498db" %}selected="selected"{% endif %} value="#3498db">Peter River</option>
+                        <option {% if car.color == "#2980b9" %}selected="selected"{% endif %} value="#2980b9">Belize Hole</option>
+                        <option {% if car.color == "#9b59b6" %}selected="selected"{% endif %} value="#9b59b6">Amethyst</option>
+                        <option {% if car.color == "#8e44ad" %}selected="selected"{% endif %} value="#8e44ad">Wisteria</option>
+                        <option {% if car.color == "#34495e" %}selected="selected"{% endif %} value="#34495e">Wet Asphalt</option>
+                        <option {% if car.color == "#2c3e50" %}selected="selected"{% endif %} value="#2c3e50">Midnight Blue</option>
+                        <option {% if car.color == "#f1c40f" %}selected="selected"{% endif %} value="#f1c40f">Sun Flower</option>
+                        <option {% if car.color == "#f39c12" %}selected="selected"{% endif %} value="#f39c12">Orange</option>
+                        <option {% if car.color == "#e67e22" %}selected="selected"{% endif %} value="#e67e22">Carrot</option>
+                        <option {% if car.color == "#d35400" %}selected="selected"{% endif %} value="#d35400">Pumpkin</option>
+                        <option {% if car.color == "#e74c3c" %}selected="selected"{% endif %} value="#e74c3c">Alizarin</option>
+                        <option {% if car.color == "#c0392b" %}selected="selected"{% endif %} value="#c0392b">Pomegranate</option>
+                        <option {% if car.color == "#bdc3c7" %}selected="selected"{% endif %} value="#bdc3c7">Silver</option>
+                        <option {% if car.color == "#95a5a6" %}selected="selected"{% endif %} value="#95a5a6">Concrete</option>
+                        <option {% if car.color == "#7f8c8d" %}selected="selected"{% endif %} value="#7f8c8d">Asbestos</option>
+
+                    </select>
+                </div>
+                
                 <div class="col-sm-1">
                     <button type="submit" class="form-control btn btn-success btn-block" name="save">
                         <i class="fa fa-save fa-lg"></i>
